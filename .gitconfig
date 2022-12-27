@@ -1,0 +1,8 @@
+[user]
+	name = Yue JIN
+	email = yuejin13@qq.com
+[http]
+	postBuffer = 524288000
+	proxy = http://127.0.0.1:7890
+[https]
+	proxy = http://127.0.0.1:7890
