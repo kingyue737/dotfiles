@@ -14,5 +14,18 @@ function cdlnk($target) {
     }
 }
 
+function refreshenv {
+    $env:path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User") 
+}
+
+$env:CYPRESS_DOWNLOAD_PATH_TEMPLATE = 'https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip'
+
+# thefuck
 $env:PYTHONIOENCODING = "utf-8"
 Invoke-Expression "$(thefuck --alias)"
+
+# zoxide
+Invoke-Expression (& {
+        $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
+    (zoxide init --hook $hook powershell | Out-String)
+    })
