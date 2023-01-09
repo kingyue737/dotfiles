@@ -81,6 +81,7 @@
             "{{ if gt .Code 0 }}p:red{{ end }}"
           ],
           "leading_diamond": "<parentBackground,background>\ue0b0</>",
+          "trailing_diamond": "<background,transparent>\ue0b4</>",
           "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf00c{{ end }} ",
           "properties": {
             "always_enabled": true
@@ -150,11 +151,11 @@
   ],
   "valid_line": {
     "background": "transparent",
-    "template": "{{ if gt .Code 0 }}<p:red,p:green>{{ else }}<p:blue,p:green>{{ end }}\ue0b4</><p:green,transparent>\ue0b4</> "
+    "template": "<transparent,p:green>\ue0b4</><p:green,transparent>\ue0b4</> "
   },
   "error_line": {
     "background": "transparent",
-    "template": "{{ if gt .Code 0 }}<p:red,p:orange>{{ else }}<p:blue,p:orange>{{ end }}\ue0b4</><p:orange,transparent>\ue0b4</> "
+    "template": "<transparent,red>\ue0b4</><red,transparent>\ue0b4</> "
   },
   "tooltips": [
     {
@@ -188,15 +189,10 @@
       }
     }
   ],
-  "transient_prompt": {
-    "foreground": "p:black",
-    "background": "transparent",
-    "template": "<p:yellow,transparent>\ue0b6</><,p:yellow> {{ .Folder }} </><p:yellow,transparent>\ue0b0</> "
-  },
   "secondary_prompt": {
-    "foreground": "p:black",
+    "foreground": "p:white",
     "background": "transparent",
-    "template": "<p:yellow,transparent>\ue0b6</><,p:yellow> > </><p:yellow,transparent>\ue0b0</> "
+    "template": "<p:blue,transparent>\ue0b6</><,p:blue> > </><p:blue,transparent>\ue0b0</> "
   },
   "palette": {
     "black": "#262B44",
