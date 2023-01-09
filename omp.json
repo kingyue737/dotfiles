@@ -74,14 +74,13 @@
         },
         {
           "type": "exit",
-          "style": "diamond",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:blue",
           "background_templates": [
             "{{ if gt .Code 0 }}p:red{{ end }}"
           ],
-          "leading_diamond": "<parentBackground,background>\ue0b0</>",
-          "trailing_diamond": "<background,transparent>\ue0b4</>",
           "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf00c{{ end }} ",
           "properties": {
             "always_enabled": true
@@ -89,9 +88,10 @@
         },
         {
           "type": "text",
-          "style": "accordion",
-          "powerline_symbol": "\ue0b4",
-          "background": "p:green"
+          "style": "plain",
+          "template": "\ue0b1",
+          "foreground": "green",
+          "background": "transparent"
         }
       ]
     },
@@ -150,12 +150,14 @@
     }
   ],
   "valid_line": {
+    "foreground": "green",
     "background": "transparent",
-    "template": "<transparent,p:green>\ue0b4</><p:green,transparent>\ue0b4</> "
+    "template": "\ue0b1 "
   },
   "error_line": {
+    "foreground": "red",
     "background": "transparent",
-    "template": "<transparent,red>\ue0b4</><red,transparent>\ue0b4</> "
+    "template": "\ue0b1 "
   },
   "tooltips": [
     {
