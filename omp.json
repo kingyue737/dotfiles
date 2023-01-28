@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
+  "pwd": "osc99",
   "final_space": true,
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "blocks": [
@@ -78,9 +79,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:blue",
-          "background_templates": [
-            "{{ if gt .Code 0 }}p:red{{ end }}"
-          ],
+          "background_templates": ["{{ if gt .Code 0 }}p:red{{ end }}"],
           "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf00c{{ end }} ",
           "properties": {
             "always_enabled": true
@@ -162,9 +161,7 @@
   "tooltips": [
     {
       "type": "aws",
-      "tips": [
-        "aws"
-      ],
+      "tips": ["aws"],
       "style": "diamond",
       "foreground": "p:white",
       "background": "p:orange",
@@ -177,9 +174,7 @@
     },
     {
       "type": "az",
-      "tips": [
-        "az"
-      ],
+      "tips": ["az"],
       "style": "diamond",
       "foreground": "p:white",
       "background": "p:blue",

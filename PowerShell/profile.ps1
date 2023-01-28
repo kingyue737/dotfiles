@@ -29,3 +29,13 @@ Invoke-Expression (& {
         $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
     (zoxide init --hook $hook powershell | Out-String)
     })
+# https://learn.microsoft.com/en-us/windows/terminal/tutorials/new-tab-same-directory#powershell-powershellexe-or-pwshexe
+function prompt {
+  $loc = $executionContext.SessionState.Path.CurrentLocation;
+
+  $out = "PS $loc$('>' * ($nestedPromptLevel + 1)) ";
+  if ($loc.Provider.Name -eq "FileSystem") {
+    $out += "$([char]27)]9;9;`"$($loc.ProviderPath)`"$([char]27)\"
+  }
+  return $out
+}
