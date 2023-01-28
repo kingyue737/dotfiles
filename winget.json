@@ -50,6 +50,9 @@
           "PackageIdentifier": "Microsoft.PowerShell"
         },
         {
+          "PackageIdentifier": "gerardog.gsudo"
+        },
+        {
           "PackageIdentifier": "Baidu.BaiduNetdisk"
         }
       ],
