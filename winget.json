@@ -53,6 +53,12 @@
           "PackageIdentifier": "gerardog.gsudo"
         },
         {
+          "PackageIdentifier": "ajeetdsouza.zoxide"
+        },
+        {
+          "PackageIdentifier": "junegunn.fzf"
+        },
+        {
           "PackageIdentifier": "Baidu.BaiduNetdisk"
         }
       ],
