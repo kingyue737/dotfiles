@@ -9,6 +9,7 @@ $paths = @(
     "Documents/PowerShell/powershell.config.json",
     ".docker/daemon.json",
     "pip/pip.ini",
+    "config.xlaunch",
     ".wslconfig",
     ".npmrc"
 )
