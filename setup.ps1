@@ -18,3 +18,6 @@ $paths = @(
 foreach ($path in $paths) {
     New-Item -Force -Path "~/$path" -ItemType SymbolicLink -Value (Get-Item "./$path").FullName
 }
+
+# X forwarding for openssh
+[System.Environment]::SetEnvironmentVariable("DISPLAY", "localhost:0", "User")
