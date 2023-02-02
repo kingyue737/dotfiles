@@ -7,6 +7,7 @@ $paths = @(
     "Documents/PowerShell/Microsoft.PowerShell_profile.ps1", 
     "Documents/PowerShell/profile.ps1", 
     "Documents/PowerShell/powershell.config.json",
+    ".config/clash/cfw-settings.yaml",
     ".docker/daemon.json",
     "pip/pip.ini",
     "config.xlaunch",
