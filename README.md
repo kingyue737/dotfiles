@@ -20,3 +20,7 @@ https://code.visualstudio.com/docs/setup/network#_proxy-server-support
 ```pwsh
 .\vscode-proxy.ps1
 ```
+
+## Mirrors
+
+Configuring or updating mirrors, please refer to guides of [Tsinghua Tuna Mirror](https://mirror.tuna.tsinghua.edu.cn/help/AOSP/).
