@@ -18,7 +18,8 @@ function refreshenv {
     $env:path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User") 
 }
 
-# Cypress mirror
+# npm mirror for binaries
+$env:PLAYWRIGHT_DOWNLOAD_HOST = 'https://cdn.npmmirror.com/binaries/playwright'
 $env:CYPRESS_DOWNLOAD_PATH_TEMPLATE = 'https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip'
 # [System.Environment]::SetEnvironmentVariable('CYPRESS_DOWNLOAD_PATH_TEMPLATE','https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip',[System.EnvironmentVariableTarget]::Machine)
 
