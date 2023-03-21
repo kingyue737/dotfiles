@@ -50,6 +50,9 @@
           "PackageIdentifier": "Microsoft.PowerShell"
         },
         {
+          "PackageIdentifier": "ImageMagick.ImageMagick"
+        },
+        {
           "PackageIdentifier": "gerardog.gsudo"
         },
         {
