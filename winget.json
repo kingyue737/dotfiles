@@ -65,6 +65,9 @@
           "PackageIdentifier": "JohnMacFarlane.Pandoc"
         },
         {
+          "PackageIdentifier": "Neovim.Neovim"
+        },
+        {
           "PackageIdentifier": "Baidu.BaiduNetdisk"
         }
       ],
