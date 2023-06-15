@@ -7,7 +7,7 @@ $paths = @(
     "Documents/PowerShell/Microsoft.PowerShell_profile.ps1", 
     "Documents/PowerShell/profile.ps1", 
     "Documents/PowerShell/powershell.config.json",
-    "AppData/Local/nvim/init.vim",
+    "AppData/Local/nvim/init.lua",
     ".config/clash/cfw-settings.yaml",
     ".docker/daemon.json",
     "pip/pip.ini",
