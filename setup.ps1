@@ -9,6 +9,7 @@ $paths = @(
     "Documents/PowerShell/powershell.config.json",
     "AppData/Local/nvim/init.lua",
     "AppData/Local/nvim/lazy-lock.json",
+    "AppData/Local/pdm/pdm/config.toml",
     ".config/clash/cfw-settings.yaml",
     ".docker/daemon.json",
     "pip/pip.ini",
