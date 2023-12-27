@@ -35,3 +35,4 @@ bypassText: |
     - '*.nustar.com'
 connShowProcess: true
 showTrayProxyDelayIndicator: true
+checkForUpdates: true
