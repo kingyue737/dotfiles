@@ -1,4 +1,4 @@
-# powershell completion for pnpm -*- shell-script -*-
+###-begin-pnpm-completion-###
 
 Register-ArgumentCompleter -CommandName 'pnpm' -ScriptBlock {
     param(
@@ -38,7 +38,7 @@ Register-ArgumentCompleter -CommandName 'pnpm' -ScriptBlock {
     # Prepare the command to request completions for the program.
     # Split the command at the first space to separate the program and arguments.
     $Program, $Arguments = $Command.Split(" ", 2)
-    $RequestComp = "$Program completion"
+    $RequestComp = "$Program completion-server"
     __pnpm_debug "RequestComp: $RequestComp"
 
     # we cannot use $WordToComplete because it
@@ -68,44 +68,23 @@ Register-ArgumentCompleter -CommandName 'pnpm' -ScriptBlock {
 
     __pnpm_debug "Calling $RequestComp"
 
-    $WordCount = $Command.Split(" ").Count - 1
-    __pnpm_debug "Word count: $WordCount"
+    $oldenv = ($env:SHELL, $env:COMP_CWORD, $env:COMP_LINE, $env:COMP_POINT)
+    $env:SHELL = "pwsh"
+    $env:COMP_CWORD = $Command.Split(" ").Count - 1
+    $env:COMP_POINT = $CursorPosition
+    $env:COMP_LINE = $Command
 
-    $PreviousWord = $Command.Split(" ")[-2]
-    __pnpm_debug "Previous word: $PreviousWord"
+    try {
+        #call the command store the output in $out and redirect stderr and stdout to null
+        # $Out is an array contains each line per element
+        Invoke-Expression -OutVariable out "$RequestComp" 2>&1 | Out-Null
+    }
+    finally {
+        ($env:SHELL, $env:COMP_CWORD, $env:COMP_LINE, $env:COMP_POINT) = $oldenv
+    }
 
-    if (-not $WordToComplete.StartsWith("-") -and ($PreviousWord -eq "run" -or $PreviousWord -eq "run-script")) {
-        # manually handle the completion of scripts
-        try {
-            $scripts = (Get-Content .\package.json | ConvertFrom-Json).scripts
-            $names = $scripts | Get-Member -MemberType NoteProperty | Select-Object -ExpandProperty Name
-            $out = $names | ForEach-Object { "$_`t$($scripts.$_)" }
-        }
-        catch {
-            $out = @()
-        }
-    }
-    else {
-        $oldenv = ($env:SHELL, $env:COMP_CWORD, $env:COMP_LINE, $env:COMP_POINT)
-        $env:SHELL = "/usr/bin/fish"
-        $env:COMP_CWORD = $WordCount
-        $env:COMP_POINT = $CursorPosition
-        $env:COMP_LINE = $Command
-        try {
-            #call the command store the output in $out and redirect stderr and stdout to null
-            # $Out is an array contains each line per element
-            Invoke-Expression -OutVariable out "$RequestComp" 2>&1 | Out-Null
-        }
-        finally {
-            ($env:SHELL, $env:COMP_CWORD, $env:COMP_LINE, $env:COMP_POINT) = $oldenv
-        }
-    }
     __pnpm_debug "The completions are: $Out"
-    if ($WordCount -ne 1 -and $Out.Contains("--version")) {
-        # fix for pnpm recursively printing root completions
-        __pnpm_debug "Found recursion, skipping"
-        return
-    }
+
     $Longest = 0
     $Values = $Out | ForEach-Object {
         #Split the output in name and description
@@ -208,9 +187,11 @@ Register-ArgumentCompleter -CommandName 'pnpm' -ScriptBlock {
                 # Like MenuComplete but we don't want to add a space here because
                 # the user need to press space anyway to get the completion.
                 # Description will not be shown because that's not possible with TabCompleteNext
-                [System.Management.Automation.CompletionResult]::new($($comp.Name | __pnpm_escapeStringWithSpecialChars), "$($comp.Name)", 'ParameterValue', "$($comp.Description)")
+                [System.Management.Automation.CompletionResult]::new($($comp.Name | __pnpm_escapeStringWithSpecialChars), "$($comp.Name)", 'ParameterValue', "$($comp.Description)") 
             }
         }
 
     }
 }
+
+###-end-pnpm-completion-###
