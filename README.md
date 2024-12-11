@@ -24,3 +24,11 @@ https://code.visualstudio.com/docs/setup/network#_proxy-server-support
 ## Mirrors
 
 Configuring or updating mirrors, please refer to guides of [Tsinghua Tuna Mirror](https://mirror.tuna.tsinghua.edu.cn/help/AOSP/).
+
+## Others
+
+Due to https://github.com/pnpm/pnpm/issues/7293, you may need to set the path of pnpm manually:
+
+```
+~\AppData\Local\Microsoft\WinGet\Packages\pnpm.pnpm_Microsoft.Winget.Source_8wekyb3d8bbwe
+```
