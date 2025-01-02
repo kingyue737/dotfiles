@@ -1,6 +1,5 @@
 {
-  "im-select.nvim": { "branch": "master", "commit": "5928077eccc761f6ab5454ae2c7c08b546147853" },
-  "lazy.nvim": { "branch": "main", "commit": "10d4371745f88837c78c8daab00c5be6e48abea4" },
-  "nvim-surround": { "branch": "main", "commit": "211eaad7c6d01ef4ac02cba9052b3082ec232101" },
-  "vscode-multi-cursor.nvim": { "branch": "main", "commit": "67e101404db09a26acdfccb3a0fdbcc49768b834" }
+  "im-select.nvim": { "branch": "master", "commit": "ca1aebb8f5c8a0342ae99a0fcc8ebc49b5f2201e" },
+  "lazy.nvim": { "branch": "main", "commit": "89ddc59d19513c5c19c8f8d2ad8573890bd00eef" },
+  "nvim-surround": { "branch": "main", "commit": "6a8f0f1e7e6e8facc9ba7c8f217daf84122b7a9b" }
 }
