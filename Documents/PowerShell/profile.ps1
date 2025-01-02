@@ -20,6 +20,13 @@ function refreshenv {
     $env:path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User") 
 }
 
+function set-pnpm-path {
+    $currentPath = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::User)
+    $newPath = "\AppData\Local\Microsoft\WinGet\Packages\pnpm.pnpm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+    $updatedPath = "$currentPath;$env:USERPROFILE$newPath"
+    [System.Environment]::SetEnvironmentVariable("Path", $updatedPath, [System.EnvironmentVariableTarget]::User)
+}
+
 # npm mirror for binaries
 $env:ELECTRON_MIRROR = 'https://cdn.npmmirror.com/binaries/electron/'
 $env:ELECTRON_BUILDER_BINARIES_MIRROR = 'https://cdn.npmmirror.com/binaries/electron-builder-binaries/'
