@@ -36,3 +36,4 @@ bypassText: |
 connShowProcess: true
 showTrayProxyDelayIndicator: true
 checkForUpdates: true
+randomMixedPort: false
