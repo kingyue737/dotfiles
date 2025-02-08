@@ -29,13 +29,10 @@
           "PackageIdentifier": "Tencent.TencentMeeting"
         },
         {
-          "PackageIdentifier": "RARLab.WinRAR"
+          "PackageIdentifier": "7zip.7zip"
         },
         {
-          "PackageIdentifier": "Fndroid.ClashForWindows"
-        },
-        {
-          "PackageIdentifier": "Python.Python.3.11"
+          "PackageIdentifier": "Python.Python.3.13"
         },
         {
           "PackageIdentifier": "Microsoft.PowerToys"
