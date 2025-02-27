@@ -13,6 +13,7 @@ $paths = @(
     "AppData/Local/pdm/pdm/config.toml",
     ".config/clash/cfw-settings.yaml",
     ".docker/daemon.json",
+    ".docker/config.json",
     "pip/pip.ini",
     "config.xlaunch",
     ".wslconfig",
