@@ -11,6 +11,7 @@ $paths = @(
     "AppData/Local/nvim/init.lua",
     "AppData/Local/nvim/lazy-lock.json",
     "AppData/Local/pdm/pdm/config.toml",
+    "AppData/Roaming/io.github.clash-verge-rev.clash-verge-rev/verge.yaml",
     ".config/clash/cfw-settings.yaml",
     ".docker/daemon.json",
     ".docker/config.json",
