@@ -9,7 +9,7 @@ winget import -i .\winget.json
 Open the newly installed PowerShell v7. Then
 
 ```pwsh
-sudo .\setup.ps1
+sudo pwsh .\setup.ps1
 ```
 
 ## VSCode proxy
