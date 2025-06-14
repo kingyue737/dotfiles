@@ -29,6 +29,20 @@ Install im-select to guarantee that im-select.nvim works properly
 .\install-im-select.ps1
 ```
 
+## Oh My Posh
+
+> https://ohmyposh.dev/docs/installation/fonts
+
+Install a Nerd font
+
+```sh
+oh-my-posh font install
+```
+
+It seems that CaskaydiaCove NF or Cascadia Code (MS) suits best.
+
+> Make sure that the icons in `omp.json` match the latest Nerd Font.
+
 ## Mirrors
 
 Configuring or updating mirrors, please refer to guides of [Tsinghua Tuna Mirror](https://mirror.tuna.tsinghua.edu.cn/help/AOSP/).
@@ -40,7 +54,3 @@ Due to https://github.com/pnpm/pnpm/issues/7293, you may need to set the path of
 ```
 ~\AppData\Local\Microsoft\WinGet\Packages\pnpm.pnpm_Microsoft.Winget.Source_8wekyb3d8bbwe
 ```
-
-## TODO
-
-Install fonts for omp
