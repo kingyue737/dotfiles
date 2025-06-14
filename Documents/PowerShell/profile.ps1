@@ -1,4 +1,4 @@
-. "$env:USERPROFILE\dotfiles\pnpm.ps1"
+. "$profile\..\pnpm.ps1"
 
 function set-proxy {
     $Env:http_proxy = "http://127.0.0.1:7890"; $Env:https_proxy = "http://127.0.0.1:7890"
@@ -34,10 +34,6 @@ $env:COREPACK_NPM_REGISTRY = 'https://registry.npmmirror.com'
 # $env:PLAYWRIGHT_DOWNLOAD_HOST = 'https://cdn.npmmirror.com/binaries/playwright'
 $env:CYPRESS_DOWNLOAD_PATH_TEMPLATE = 'https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip'
 # [System.Environment]::SetEnvironmentVariable('CYPRESS_DOWNLOAD_PATH_TEMPLATE','https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip',[System.EnvironmentVariableTarget]::Machine)
-
-# thefuck
-$env:PYTHONIOENCODING = "utf-8"
-Invoke-Expression "$(thefuck --alias)"
 
 # zoxide
 Invoke-Expression (& {

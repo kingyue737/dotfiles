@@ -32,3 +32,7 @@ Due to https://github.com/pnpm/pnpm/issues/7293, you may need to set the path of
 ```
 ~\AppData\Local\Microsoft\WinGet\Packages\pnpm.pnpm_Microsoft.Winget.Source_8wekyb3d8bbwe
 ```
+
+## TODO
+
+Install fonts for omp
