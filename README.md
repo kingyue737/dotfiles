@@ -21,6 +21,14 @@ https://code.visualstudio.com/docs/setup/network#_proxy-server-support
 .\vscode-proxy.ps1
 ```
 
+## NeoVim
+
+Install im-select to guarantee that im-select.nvim works properly
+
+```sh
+.\install-im-select.ps1
+```
+
 ## Mirrors
 
 Configuring or updating mirrors, please refer to guides of [Tsinghua Tuna Mirror](https://mirror.tuna.tsinghua.edu.cn/help/AOSP/).
