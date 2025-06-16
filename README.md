@@ -43,6 +43,21 @@ It seems that CaskaydiaCove NF or Cascadia Code (MS) suits best.
 
 > Make sure that the icons in `omp.json` match the latest Nerd Font.
 
+## Setup a New PC
+
+1. Generate SSH key and add to GitHub/GitLab
+2. Install Git and clone dotfiles
+3. Install other apps via winget
+4. Run setup scripts
+5. Sync VSCode extensions
+6. Upgrade to Windows Pro
+    - Switch to English
+    - Enable sandbox
+7. Uninstall useless built-in app like PC manager
+8. Merge C: and D: drives if possible
+9. Log in Feilian
+10. Install LAN message app like NWT
+
 ## Mirrors
 
 Configuring or updating mirrors, please refer to guides of [Tsinghua Tuna Mirror](https://mirror.tuna.tsinghua.edu.cn/help/AOSP/).
