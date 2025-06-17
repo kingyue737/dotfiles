@@ -1,9 +1,5 @@
 [wsl2]
-memory=3GB
-
-[experimental]
-sparseVhd=true
-autoMemoryReclaim=gradual
+memory=4GB
 networkingMode=mirrored
 dnsTunneling=true
 autoProxy=true
