@@ -24,8 +24,46 @@
     "foreground": "red",
     "background": "transparent"
   },
+  "upgrade": {
+    "source": "cdn",
+    "interval": "168h",
+    "auto": false,
+    "notice": false
+  },
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "pwd": "osc99",
+  "tooltips": [
+    {
+      "properties": {
+        "display_default": true
+      },
+      "leading_diamond": "\ue0b0",
+      "trailing_diamond": "\ue0b4",
+      "template": " \ue7ad {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} ",
+      "foreground": "p:white",
+      "background": "p:orange",
+      "type": "aws",
+      "style": "diamond",
+      "tips": [
+        "aws"
+      ]
+    },
+    {
+      "properties": {
+        "display_default": true
+      },
+      "leading_diamond": "\ue0b0",
+      "trailing_diamond": "\ue0b4",
+      "template": " \ufd03 {{ .Name }} ",
+      "foreground": "p:white",
+      "background": "p:blue",
+      "type": "az",
+      "style": "diamond",
+      "tips": [
+        "az"
+      ]
+    }
+  ],
   "blocks": [
     {
       "type": "prompt",
@@ -141,7 +179,7 @@
             "fetch_package_manager": false,
             "home_enabled": false
           },
-          "template": "\uf898 ",
+          "template": "\ue718 ",
           "foreground": "p:green",
           "background": "transparent",
           "type": "node",
@@ -152,7 +190,7 @@
             "cache_duration": "none",
             "fetch_version": false
           },
-          "template": "\ufcd1 ",
+          "template": "\udb81\udfd3 ",
           "foreground": "p:blue",
           "background": "transparent",
           "type": "go",
@@ -191,38 +229,6 @@
           "type": "time",
           "style": "plain"
         }
-      ]
-    }
-  ],
-  "tooltips": [
-    {
-      "properties": {
-        "display_default": true
-      },
-      "leading_diamond": "\ue0b0",
-      "trailing_diamond": "\ue0b4",
-      "template": " \ue7ad {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} ",
-      "foreground": "p:white",
-      "background": "p:orange",
-      "type": "aws",
-      "style": "diamond",
-      "tips": [
-        "aws"
-      ]
-    },
-    {
-      "properties": {
-        "display_default": true
-      },
-      "leading_diamond": "\ue0b0",
-      "trailing_diamond": "\ue0b4",
-      "template": " \ufd03 {{ .Name }} ",
-      "foreground": "p:white",
-      "background": "p:blue",
-      "type": "az",
-      "style": "diamond",
-      "tips": [
-        "az"
       ]
     }
   ],
