@@ -21,7 +21,7 @@ enable_system_proxy: true
 enable_proxy_guard: false
 enable_dns_settings: true
 use_default_bypass: false
-system_proxy_bypass: localhost;127.*;192.168.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;<local>;*.nustar.com
+system_proxy_bypass: localhost;127.*;192.168.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;<local>;docker.internal;*.nustar.com
 proxy_guard_duration: 30
 proxy_auto_config: false
 pac_file_content: |

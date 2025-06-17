@@ -51,12 +51,13 @@ It seems that CaskaydiaCove NF or Cascadia Code (MS) suits best.
 4. Run setup scripts
 5. Sync VSCode extensions
 6. Upgrade to Windows Pro
-    - Switch to English
-    - Enable sandbox
+   - Switch to English
+   - Enable sandbox
 7. Uninstall useless built-in app like PC manager
 8. Merge C: and D: drives if possible
 9. Log in Feilian
 10. Install LAN message app like NWT
+11. Setup docker config manually to make it work with proxy
 
 ## Mirrors
 
