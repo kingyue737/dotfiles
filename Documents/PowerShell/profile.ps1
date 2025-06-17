@@ -35,12 +35,6 @@ $env:COREPACK_NPM_REGISTRY = 'https://registry.npmmirror.com'
 $env:CYPRESS_DOWNLOAD_PATH_TEMPLATE = 'https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip'
 # [System.Environment]::SetEnvironmentVariable('CYPRESS_DOWNLOAD_PATH_TEMPLATE','https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip',[System.EnvironmentVariableTarget]::Machine)
 
-# zoxide
-Invoke-Expression (& {
-        $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
-    (zoxide init --hook $hook powershell | Out-String)
-    })
-
 # https://learn.microsoft.com/en-us/windows/terminal/tutorials/new-tab-same-directory#powershell-powershellexe-or-pwshexe
 function prompt {
     $loc = $executionContext.SessionState.Path.CurrentLocation;
