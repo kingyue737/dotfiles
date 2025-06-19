@@ -58,6 +58,7 @@ It seems that CaskaydiaCove NF or Cascadia Code (MS) suits best.
 9. Log in Feilian
 10. Install LAN message app like NWT
 11. Setup docker config manually to make it work with proxy
+12. Link email accounts
 
 ## Mirrors
 

@@ -28,6 +28,7 @@ pac_file_content: |
   function FindProxyForURL(url, host) {
     return "PROXY 127.0.0.1:%mixed-port%; SOCKS5 127.0.0.1:%mixed-port%; DIRECT;";
   }
+proxy_host: null
 theme_setting: null
 web_ui_list: null
 clash_core: verge-mihomo
@@ -68,6 +69,7 @@ enable_tray_speed: true
 enable_tray_icon: true
 enable_auto_light_weight_mode: false
 auto_light_weight_minutes: 10
+enable_hover_jump_navigator: null
 service_state:
   last_install_time: 1745399607
   install_count: 1
