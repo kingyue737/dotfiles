@@ -12,6 +12,8 @@ Open the newly installed PowerShell v7. Then
 sudo pwsh .\setup.ps1
 ```
 
+> Enable Windows Developer Mode can avoid using sudo in many scenarios
+
 ## VSCode proxy
 
 Add `--proxy-server="http://127.0.0.1:7890"` for VSCode shortcut
