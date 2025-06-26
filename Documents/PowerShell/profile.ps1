@@ -27,6 +27,8 @@ function set-pnpm-path {
     [System.Environment]::SetEnvironmentVariable("Path", $updatedPath, [System.EnvironmentVariableTarget]::User)
 }
 
+# Google Cloud Project ID for Gemini CLI
+$env:GOOGLE_CLOUD_PROJECT = 'ai-trial-455208'
 # npm mirror for binaries
 $env:ELECTRON_MIRROR = 'https://cdn.npmmirror.com/binaries/electron/'
 $env:ELECTRON_BUILDER_BINARIES_MIRROR = 'https://cdn.npmmirror.com/binaries/electron-builder-binaries/'
