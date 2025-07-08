@@ -26,9 +26,6 @@
           "PackageIdentifier": "Tencent.TencentMeeting"
         },
         {
-          "PackageIdentifier": "7zip.7zip"
-        },
-        {
           "PackageIdentifier": "Python.Python.3.13"
         },
         {
