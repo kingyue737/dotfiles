@@ -58,3 +58,7 @@ Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
         [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
     }
 }
+
+# Import the PSFzf module to enable its commands
+Import-Module PSFzf
+Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
