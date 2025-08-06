@@ -20,7 +20,7 @@ Add `--proxy-server="http://127.0.0.1:7890"` for VSCode shortcut
 https://code.visualstudio.com/docs/setup/network#_proxy-server-support
 
 ```pwsh
-.\vscode-proxy.ps1
+.\installs\vscode-proxy.ps1
 ```
 
 ## NeoVim
@@ -28,7 +28,7 @@ https://code.visualstudio.com/docs/setup/network#_proxy-server-support
 Install im-select to guarantee that im-select.nvim works properly
 
 ```sh
-.\install-im-select.ps1
+.\installs\im-select.ps1
 ```
 
 ## Oh My Posh
