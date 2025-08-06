@@ -66,6 +66,9 @@
         },
         {
           "PackageIdentifier": "Anysphere.Cursor"
+        },
+        {
+          "PackageIdentifier": "Rustlang.Rustup"
         }
       ],
       "SourceDetails": {
