@@ -19,7 +19,8 @@ $paths = @(
     "config.xlaunch",
     ".wslconfig",
     ".npmrc",
-    "omp.json"
+    "omp.json",
+    ".cursor/mcp.json"
 )
 
 foreach ($path in $paths) {
