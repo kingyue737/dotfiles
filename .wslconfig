@@ -3,3 +3,6 @@ memory=4GB
 networkingMode=mirrored
 dnsTunneling=true
 autoProxy=true
+
+[experimental]
+hostAddressLoopback=true

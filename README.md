@@ -73,3 +73,9 @@ Due to https://github.com/pnpm/pnpm/issues/7293, you may need to set the path of
 ```
 ~\AppData\Local\Microsoft\WinGet\Packages\pnpm.pnpm_Microsoft.Winget.Source_8wekyb3d8bbwe
 ```
+
+Expose a port to LAN
+
+```sh
+netsh advfirewall firewall add rule name="LAN Port 8082" dir=in action=allow protocol=TCP localport=8082 profile=any
+```
