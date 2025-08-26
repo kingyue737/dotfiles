@@ -11,19 +11,10 @@
           "PackageIdentifier": "Git.Git"
         },
         {
-          "PackageIdentifier": "Microsoft.WindowsTerminal"
-        },
-        {
           "PackageIdentifier": "JanDeDobbeleer.OhMyPosh"
         },
         {
-          "PackageIdentifier": "marha.VcXsrv"
-        },
-        {
           "PackageIdentifier": "Tencent.WeChat.Universal"
-        },
-        {
-          "PackageIdentifier": "Tencent.TencentMeeting"
         },
         {
           "PackageIdentifier": "Python.Python.3.13"
@@ -60,12 +51,6 @@
         },
         {
           "PackageIdentifier": "ClashVergeRev.ClashVergeRev"
-        },
-        {
-          "PackageIdentifier": "ByteDance.FeiLian"
-        },
-        {
-          "PackageIdentifier": "Anysphere.Cursor"
         },
         {
           "PackageIdentifier": "Rustlang.Rustup"
