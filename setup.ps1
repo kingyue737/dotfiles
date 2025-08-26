@@ -5,16 +5,12 @@ $paths = @(
     "Documents/PowerShell/powershell.config.json",
     "AppData/Local/nvim/init.lua",
     "AppData/Local/nvim/lazy-lock.json",
-    "AppData/Local/pdm/pdm/config.toml",
-    "AppData/Roaming/io.github.clash-verge-rev.clash-verge-rev/verge.yaml",
+    # "AppData/Roaming/io.github.clash-verge-rev.clash-verge-rev/verge.yaml",
     # ".docker/daemon.json",
     # ".docker/config.json",
     "pip/pip.ini",
-    "config.xlaunch",
     ".wslconfig",
-    ".npmrc",
-    "omp.json",
-    ".cursor/mcp.json"
+    "omp.json"
 )
 
 foreach ($path in $paths) {

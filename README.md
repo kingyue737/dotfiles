@@ -9,7 +9,7 @@ winget import -i .\winget.json
 Open the newly installed PowerShell v7. Then
 
 ```pwsh
-sudo pwsh .\setup.ps1
+.\setup.ps1
 ```
 
 > Enable Windows Developer Mode can avoid using sudo in many scenarios
