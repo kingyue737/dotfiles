@@ -1,8 +1,8 @@
 . "$profile\..\pnpm.ps1"
 
-function set-proxy {
-    $Env:http_proxy = "http://127.0.0.1:7890"; $Env:https_proxy = "http://127.0.0.1:7890"
-}
+# function set-proxy {
+#     $Env:http_proxy = "http://127.0.0.1:7890"; $Env:https_proxy = "http://127.0.0.1:7890"
+# }
 
 function cdlnk($target) {
     if ($target.EndsWith(".lnk")) {
@@ -30,11 +30,11 @@ function set-pnpm-path {
 # Google Cloud Project ID for Gemini CLI
 # $env:GOOGLE_CLOUD_PROJECT = 'ai-trial-455208'
 # npm mirror for binaries
-$env:ELECTRON_MIRROR = 'https://cdn.npmmirror.com/binaries/electron/'
-$env:ELECTRON_BUILDER_BINARIES_MIRROR = 'https://cdn.npmmirror.com/binaries/electron-builder-binaries/'
-$env:COREPACK_NPM_REGISTRY = 'https://registry.npmmirror.com'
+# $env:ELECTRON_MIRROR = 'https://cdn.npmmirror.com/binaries/electron/'
+# $env:ELECTRON_BUILDER_BINARIES_MIRROR = 'https://cdn.npmmirror.com/binaries/electron-builder-binaries/'
+# $env:COREPACK_NPM_REGISTRY = 'https://registry.npmmirror.com'
 # $env:PLAYWRIGHT_DOWNLOAD_HOST = 'https://cdn.npmmirror.com/binaries/playwright'
-$env:CYPRESS_DOWNLOAD_PATH_TEMPLATE = 'https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip'
+# $env:CYPRESS_DOWNLOAD_PATH_TEMPLATE = 'https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip'
 # [System.Environment]::SetEnvironmentVariable('CYPRESS_DOWNLOAD_PATH_TEMPLATE','https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip',[System.EnvironmentVariableTarget]::Machine)
 
 # https://learn.microsoft.com/en-us/windows/terminal/tutorials/new-tab-same-directory#powershell-powershellexe-or-pwshexe
