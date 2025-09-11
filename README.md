@@ -64,6 +64,13 @@ It seems that CaskaydiaCove NF or Cascadia Code (MS) suits best.
 
 Configuring or updating mirrors, please refer to guides of [Tsinghua Tuna Mirror](https://mirror.tuna.tsinghua.edu.cn/help/AOSP/).
 
+## Podman
+
+```sh
+cd ~\AppData\Local\Microsoft\WinGet\Links
+New-Item -ItemType SymbolicLink -Path "docker.exe" -Target "C:\Program Files\RedHat\Podman\podman.exe
+```
+
 ## Others
 
 Due to https://github.com/pnpm/pnpm/issues/7293, you may need to set the path of pnpm manually:
