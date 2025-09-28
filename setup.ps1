@@ -19,3 +19,6 @@ foreach ($path in $paths) {
 
 # X forwarding for openssh
 [System.Environment]::SetEnvironmentVariable("DISPLAY", "localhost:0", "User")
+
+# Node.js may run out of memory while Vite is building big project
+[System.Environment]::SetEnvironmentVariable("NODE_OPTIONS", "--max-old-space-size=8192", "User")
