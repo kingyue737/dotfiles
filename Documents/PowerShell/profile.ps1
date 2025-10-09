@@ -62,3 +62,5 @@ Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
 # Import the PSFzf module to enable its commands
 Import-Module PSFzf
 Set-PSFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+
+Import-Module posh-git
