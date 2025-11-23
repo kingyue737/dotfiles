@@ -4,3 +4,6 @@ oh-my-posh init pwsh --config "$env:USERPROFILE/omp.json" | Invoke-Expression
 
 # zoxide
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
+#GitHub CLI tab completion
+Invoke-Expression -Command $(gh completion -s powershell | Out-String)
