@@ -10,6 +10,7 @@ $paths = @(
     # ".docker/config.json",
     "pip/pip.ini",
     ".wslconfig",
+    ".gitignore_global",
     ".npmrc",
     "omp.json"
 )
