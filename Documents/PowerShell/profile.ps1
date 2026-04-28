@@ -27,6 +27,26 @@ function set-pnpm-path {
     [System.Environment]::SetEnvironmentVariable("Path", $updatedPath, [System.EnvironmentVariableTarget]::User)
 }
 
+function Refresh-NpmToken {
+    Write-Host "🔄 Fetching NPM token from 1Password..." -ForegroundColor Cyan
+
+    # Read the token via 1Password CLI using the secret reference
+    $Token = op read "op://Shared/bfojwj2lryfxdo5mn7v6uwavii/Section_8CC92BBEFAC0417D9C5571F81718CE7D/qsp4cgbsolp2ok7qn4d2ac7sfe"
+
+    if ([string]::IsNullOrWhiteSpace($Token)) {
+        Write-Host "❌ Failed to get token. Please check if 1Password is unlocked and the reference path is correct." -ForegroundColor Red
+        return
+    }
+
+    # 1. Persist the token to Windows User Scope environment variables
+    [Environment]::SetEnvironmentVariable("NPM_TOKEN", $Token, "User")
+
+    # 2. Inject the token into the current terminal session for immediate use
+    $env:NPM_TOKEN = $Token
+
+    Write-Host "✅ NPM_TOKEN has been permanently written to User Scope and is active in the current session!" -ForegroundColor Green
+}
+
 # Google Cloud Project ID for Gemini CLI
 # $env:GOOGLE_CLOUD_PROJECT = 'ai-trial-455208'
 # npm mirror for binaries
