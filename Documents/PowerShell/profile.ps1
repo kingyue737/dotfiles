@@ -47,6 +47,25 @@ function Refresh-NpmToken {
     Write-Host "✅ NPM_TOKEN has been permanently written to User Scope and is active in the current session!" -ForegroundColor Green
 }
 
+function Remove-NodeModules {
+    # Only run in project root (must have package.json)
+    $packageJson = Get-Item "package.json" -ErrorAction SilentlyContinue
+    if (-not $packageJson) {
+        Write-Host "❌ Not in a project root (package.json not found)" -ForegroundColor Red
+        return
+    }
+
+    $dirs = Get-ChildItem -Path . -Filter "node_modules" -Recurse -Directory
+    if (-not $dirs) {
+        Write-Host "✅ No node_modules found" -ForegroundColor Green
+        return
+    }
+
+    Write-Host "Found $($dirs.Count) node_modules, removing..." -ForegroundColor Yellow
+    $dirs | Remove-Item -Recurse -Force
+    Write-Host "✅ Done" -ForegroundColor Green
+}
+
 # Google Cloud Project ID for Gemini CLI
 # $env:GOOGLE_CLOUD_PROJECT = 'ai-trial-455208'
 # npm mirror for binaries
