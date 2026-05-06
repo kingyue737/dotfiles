@@ -12,6 +12,9 @@ $paths = @(
     ".wslconfig",
     ".gitignore_global",
     ".npmrc",
+    ".claude/CLAUDE.md",
+    ".claude/settings.json",
+    ".claude/hooks/block-claude-coauthor.ps1",
     "omp.json"
 )
 

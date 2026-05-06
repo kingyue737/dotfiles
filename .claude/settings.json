@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "ask": [
+      "Bash(gh pr review:*)",
+      "Bash(gh pr comment:*)"
+    ]
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "model": "opus[1m]",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pwsh -NoProfile -File \"C:\\Users\\YueJin.AzureAD\\.claude\\hooks\\block-claude-coauthor.ps1\""
+          }
+        ]
+      }
+    ]
+  }
+}
