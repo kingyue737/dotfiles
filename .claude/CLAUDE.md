@@ -8,7 +8,7 @@ If the repo is pnpm-managed (has `pnpm-lock.yaml`, or `packageManager: "pnpm@...
 
 # Kong PRs — Jira ticket required
 
-When opening a PR in a Kong repo (git remote matches `github.com[:/]Kong/` or `konghq`), the PR description must include a Jira ticket on its own line, in square brackets, e.g.:
+When opening a PR in a Kong repo (git remote matches `github.com[:/]Kong/` or `konghq`), the PR description must include a Jira ticket on its own line, in square brackets, right after the title, e.g.:
 
 ```
 [KM-2000]
