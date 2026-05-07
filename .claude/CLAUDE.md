@@ -15,3 +15,7 @@ When opening a PR in a Kong repo (git remote matches `github.com[:/]Kong/` or `k
 ```
 
 If the user did not provide a ticket ID in the prompt, ask for it via AskUserQuestion before creating the PR. Do not invent one, do not omit it, do not proceed without it.
+
+# Kong repos — local checkout location
+
+Kong repositories (git remote matches `github.com[:/]Kong/` or `konghq`) are typically cloned under `C:\Repositories\`. When the user references another Kong repo for cross-repo code reading, look there first (e.g. `C:\Repositories\<repo-name>`) before cloning or asking.
