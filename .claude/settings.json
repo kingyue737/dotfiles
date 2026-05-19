@@ -1,13 +1,12 @@
 {
   "permissions": {
-    "defaultMode": "bypassPermissions",
     "ask": [
       "Bash(gh pr review:*)",
       "Bash(gh pr comment:*)"
-    ]
+    ],
+    "defaultMode": "bypassPermissions"
   },
-  "skipDangerousModePermissionPrompt": true,
-  "model": "opus[1m]",
+  "model": "opusplan",
   "hooks": {
     "PreToolUse": [
       {
@@ -20,5 +19,7 @@
         ]
       }
     ]
-  }
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "advisorModel": "opus"
 }

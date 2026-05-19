@@ -15,6 +15,7 @@ $paths = @(
     ".claude/CLAUDE.md",
     ".claude/settings.json",
     ".claude/hooks/block-claude-coauthor.ps1",
+    ".copilot/settings.json",
     "omp.json"
 )
 
@@ -24,6 +25,9 @@ foreach ($path in $paths) {
 
 # X forwarding for openssh
 [System.Environment]::SetEnvironmentVariable("DISPLAY", "localhost:0", "User")
+
+# Copilot CLI: allow all tools without confirmation
+[System.Environment]::SetEnvironmentVariable("COPILOT_ALLOW_ALL", "true", "User")
 
 # Node.js may run out of memory while Vite is building big project
 [System.Environment]::SetEnvironmentVariable("NODE_OPTIONS", "--max-old-space-size=8192", "User")

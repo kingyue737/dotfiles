@@ -1,0 +1,11 @@
+{
+  "model": "claude-opus-4.6",
+  "renderMarkdown": true,
+  "screenReader": false,
+  "theme": "auto",
+  "allowedUrls": [
+    "https://github.com",
+    "https://docs.github.com"
+  ],
+  "effortLevel": "high"
+}
