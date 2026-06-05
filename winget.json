@@ -54,6 +54,9 @@
         },
         {
           "PackageIdentifier": "Rustlang.Rustup"
+        },
+        {
+          "PackageIdentifier": "Microsoft.Coreutils"
         }
       ],
       "SourceDetails": {

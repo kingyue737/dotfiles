@@ -20,6 +20,9 @@
       }
     ]
   },
-  "skipDangerousModePermissionPrompt": true,
-  "advisorModel": "opus"
+  "enabledPlugins": {
+    "datadog@claude-plugins-official": true
+  },
+  "advisorModel": "opus",
+  "skipDangerousModePermissionPrompt": true
 }
