@@ -4,7 +4,10 @@
       "Bash(gh pr review:*)",
       "Bash(gh pr comment:*)"
     ],
-    "defaultMode": "bypassPermissions"
+    "defaultMode": "bypassPermissions",
+    "allow": [
+      "Bash(git push *)"
+    ]
   },
   "model": "opusplan",
   "hooks": {
@@ -23,6 +26,8 @@
   "enabledPlugins": {
     "datadog@claude-plugins-official": true
   },
+  "effortLevel": "medium",
   "advisorModel": "opus",
+  "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true
 }
