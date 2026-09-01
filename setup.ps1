@@ -5,6 +5,7 @@ $paths = @(
     "Documents/PowerShell/powershell.config.json",
     "AppData/Local/nvim/init.lua",
     "AppData/Local/nvim/lazy-lock.json",
+    "AppData/Local/pnpm/config/config.yaml",
     # "AppData/Roaming/io.github.clash-verge-rev.clash-verge-rev/verge.yaml",
     # ".docker/daemon.json",
     # ".docker/config.json",

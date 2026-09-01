@@ -1,14 +1,14 @@
 {
   "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-  "CreationDate": "2025-04-23T17:36:32.378-00:00",
+  "CreationDate": "2026-09-01T15:28:15.014-00:00",
   "Sources": [
     {
       "Packages": [
         {
-          "PackageIdentifier": "Docker.DockerDesktop"
+          "PackageIdentifier": "Git.Git"
         },
         {
-          "PackageIdentifier": "Git.Git"
+          "PackageIdentifier": "GitHub.cli"
         },
         {
           "PackageIdentifier": "JanDeDobbeleer.OhMyPosh"
@@ -57,6 +57,39 @@
         },
         {
           "PackageIdentifier": "Microsoft.Coreutils"
+        },
+        {
+          "PackageIdentifier": "Podman.CLI"
+        },
+        {
+          "PackageIdentifier": "RedHat.Podman-Desktop"
+        },
+        {
+          "PackageIdentifier": "Kubernetes.minikube"
+        },
+        {
+          "PackageIdentifier": "Kubernetes.kubectl"
+        },
+        {
+          "PackageIdentifier": "jqlang.jq"
+        },
+        {
+          "PackageIdentifier": "deviceinsight.kafkactl"
+        },
+        {
+          "PackageIdentifier": "Insomnia.Insomnia"
+        },
+        {
+          "PackageIdentifier": "deviceinsight.kafkactl"
+        },
+        {
+          "PackageIdentifier": "Hashicorp.Terraform"
+        },
+        {
+          "PackageIdentifier": "Helm.Helm"
+        },
+        {
+          "PackageIdentifier": "Anthropic.ClaudeCode"
         }
       ],
       "SourceDetails": {
@@ -67,5 +100,5 @@
       }
     }
   ],
-  "WinGetVersion": "1.11.200-preview"
+  "WinGetVersion": "1.30.110-preview"
 }

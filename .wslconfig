@@ -1,5 +1,5 @@
 [wsl2]
-memory=4GB
+memory=8GB
 networkingMode=mirrored
 dnsTunneling=true
 autoProxy=true
